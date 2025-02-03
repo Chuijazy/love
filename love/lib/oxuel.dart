@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:love/not.dart';
 import 'package:love/yes.dart';
 
-class No extends StatelessWidget {
-  const No({super.key});
+class Oxuel extends StatelessWidget {
+  const Oxuel({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,17 +11,17 @@ class No extends StatelessWidget {
           children: [
             Positioned.fill(
               child: Image.asset(
-                'assets/no.jpeg',
+                'assets/oxuel.jpeg',
                 fit: BoxFit.cover,
               ),
             ),
              Positioned(
-              top: 120,
-              left: 80,
+              top: 160,
+              left: 60,
               child: Text(
-                'Ты уверен?',
+                'ПОДУМАЙ ЕЩЕ -_-',
                 style: TextStyle(
-                  fontSize: 35,
+                  fontSize: 25,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                   backgroundColor: const Color.fromARGB(255, 255, 0, 0),
@@ -30,8 +29,8 @@ class No extends StatelessWidget {
               ),
             ),
              Positioned(
-              left: 20,
-              top: 430,
+              left: 55,
+              top: 450,
               child: Builder(
                 builder: (context) {
                   return ElevatedButton(
@@ -42,42 +41,36 @@ class No extends StatelessWidget {
                           builder: (context) => Yes()),);
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color.fromARGB(255, 248, 248, 77),
+                      backgroundColor: const Color.fromARGB(255, 39, 214, 249),
                     ),
                     child: Text(
-                      'Я согласен быть твоей валентинкой!',
+                      'ДА. Я хочу быть \nтвоей валентинкой!',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 14,
-                        color: const Color.fromARGB(255, 154, 2, 142),
+                        fontSize: 20,
+                        color: Colors.pink,
                       ),
                     ),
                   );
                 }
               ),
             ),
-             Positioned(
-              left: 135,
+            Positioned(
+              left: 150,
               top: 570,
               child: Builder(
                 builder: (context) {
                   return ElevatedButton(
                     onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => Not(),
-                        ),
-                      );
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.transparent,
                     ),
                     child: Text(
-                      'не буду',
+                      'нет',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 10,
+                        fontSize: 8,
                         color: Colors.white,
                       ),
                     ),
@@ -85,8 +78,8 @@ class No extends StatelessWidget {
                 }
               ),
             ),
-          ],
-        ),
-    );
+          ]
+      ),
+      );
   }
 }

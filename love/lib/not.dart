@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:love/not.dart';
+import 'package:love/oxuel.dart';
 import 'package:love/yes.dart';
 
-class No extends StatelessWidget {
-  const No({super.key});
+class Not extends StatelessWidget {
+  const Not({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,25 +12,25 @@ class No extends StatelessWidget {
           children: [
             Positioned.fill(
               child: Image.asset(
-                'assets/no.jpeg',
+                'assets/sure.jpeg',
                 fit: BoxFit.cover,
               ),
             ),
              Positioned(
-              top: 120,
-              left: 80,
+              top: 360,
+              left: 70,
               child: Text(
-                'Ты уверен?',
+                'Подумай еще раз',
                 style: TextStyle(
-                  fontSize: 35,
+                  fontSize: 25,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
-                  backgroundColor: const Color.fromARGB(255, 255, 0, 0),
+                  backgroundColor: const Color.fromARGB(255, 11, 131, 0),
                 ),
               ),
             ),
              Positioned(
-              left: 20,
+              left: 45,
               top: 430,
               child: Builder(
                 builder: (context) {
@@ -42,14 +42,13 @@ class No extends StatelessWidget {
                           builder: (context) => Yes()),);
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color.fromARGB(255, 248, 248, 77),
+                      backgroundColor: Colors.white,
                     ),
                     child: Text(
-                      'Я согласен быть твоей валентинкой!',
+                      'ДА. Я буду твоей валентинкой!',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 14,
-                        color: const Color.fromARGB(255, 154, 2, 142),
+                        fontSize: 15,
                       ),
                     ),
                   );
@@ -57,7 +56,7 @@ class No extends StatelessWidget {
               ),
             ),
              Positioned(
-              left: 135,
+              left: 150,
               top: 570,
               child: Builder(
                 builder: (context) {
@@ -66,7 +65,7 @@ class No extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => Not(),
+                          builder: (context) => Oxuel(),
                         ),
                       );
                     },
@@ -77,7 +76,7 @@ class No extends StatelessWidget {
                       'не буду',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 10,
+                        fontSize: 8,
                         color: Colors.white,
                       ),
                     ),

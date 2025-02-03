@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'yes.dart'; // Assuming Yes screen is in yes.dart
-import 'no.dart';  // Assuming No screen is in no.dart
+import 'yes.dart'; 
+import 'no.dart';  
 
 void main() {
   runApp(const MyApp());
@@ -18,26 +18,26 @@ class MyApp extends StatelessWidget {
           children: [
             Positioned.fill(
               child: Image.asset(
-                'assets/wallpaper.jpeg',
+                'assets/hello.jpeg',
                 fit: BoxFit.cover,
               ),
             ),
             Positioned(
-              top: 250,
-              left: 15,
+              top: 370,
+              left: 10,
               child: Text(
-                'Will you be mine Valentine?',
+                'Будешь ли ты моей валентинкой?',
                 style: TextStyle(
-                  fontSize: 25,
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
-                  backgroundColor: Colors.pink.shade100,
+                  backgroundColor: Colors.pink.shade200,
                 ),
               ),
             ),
             Positioned(
-              left: 125,
-              top: 340,
+              left: 100,
+              top: 430,
               child: Builder(
                 builder: (context) {
                   return ElevatedButton(
@@ -51,7 +51,7 @@ class MyApp extends StatelessWidget {
                       backgroundColor: Colors.purple.shade100,
                     ),
                     child: Text(
-                      'YES!!!',
+                      'КОНЕЧНО!!!',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 25,
@@ -76,10 +76,10 @@ class MyApp extends StatelessWidget {
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color.fromARGB(255, 253, 120, 111),
+                      backgroundColor: Colors.transparent,
                     ),
                     child: Text(
-                      'no',
+                      'нет',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 12,
